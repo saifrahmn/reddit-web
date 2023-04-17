@@ -17,13 +17,13 @@ const Register: React.FC<registerProps> = ({}) => {
         onSubmit={(values) => {
           console.log(values);
         }}
-      />
+      >
         {({ isSubmitting }) => (
           <Form>
             <Box mt={4}>
   <InputField name="username" placeholder="username" label="username" />
   </Box>
-  {/* <Box mt={4}>
+  <Box mt={4}>
   <InputField name="password" placeholder="password" label="password" type="password"/>
   </Box>
   <Button
@@ -33,14 +33,13 @@ const Register: React.FC<registerProps> = ({}) => {
             type="submit"
           >
             Submit
-          </Button> */}
+          </Button>
   </Form>
   )}
-  
   </Formik>
-    </Wrapper>
+  </Wrapper>
   );
-      }
+};
 
 
 export default Register;
