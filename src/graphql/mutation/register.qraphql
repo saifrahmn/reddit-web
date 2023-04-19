@@ -1,0 +1,15 @@
+mutation Register($options: UserID!) {
+
+  Register(options: {user_name: $username, user_password: $userpassword}) {
+    error{
+      field
+      message
+    }
+    user {
+      createdAt
+      id
+      updatedAt
+      username
+    }
+  }
+}

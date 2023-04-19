@@ -7,9 +7,9 @@ import { InputField } from "../components/InputField";
 import { Box } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 
-interface registerProps {}
+interface loginProps {}
 
-const Register: React.FC<registerProps> = ({}) => {
+const login: React.FC<loginProps> = ({}) => {
   return (
     <Wrapper variant="small">
       <Formik
@@ -26,18 +26,6 @@ const Register: React.FC<registerProps> = ({}) => {
   <Box mt={4}>
   <InputField name="password" placeholder="password" label="Password" type="password"/>
   </Box>
-  <Box mt={4}>
-  <InputField name="RePassword" placeholder="password" label="Re-enter password" />
-  </Box>
-  {/* {/* <Box mt={4}>
-  <InputField name="github" placeholder="github username" label="Github id" />
-  </Box>
-  <Box mt={4}>
-  <FormControl>
-  <FormLabel htmlFor="Role">Your Role in the community</FormLabel>
-  <select id="Role" placeholder="Team lead" />
-</FormControl> 
-        </Box>*/}
   <Button
             mt={4}
             isLoading={isSubmitting}
@@ -54,4 +42,4 @@ const Register: React.FC<registerProps> = ({}) => {
 };
 
 
-export default Register;
+export default login;
