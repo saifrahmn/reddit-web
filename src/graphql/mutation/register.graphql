@@ -13,3 +13,6 @@ mutation Register($options: UserID!) {
     }
   }
 }
+export function useRegisterMutation(){
+  return Urql.useMutation<RegisterMutation, RegisterMutationVariables>{RegisterDocument}
+}
