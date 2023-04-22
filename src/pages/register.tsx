@@ -13,8 +13,8 @@ interface registerProps {}
 
 const REGISTER_MUT=
 `
-mutation Register($username: String, $password: String) {
-  register(options: { user_name: $username, user_password: $password }) {
+mutation Mutation($username: String!, $password: String!) {
+  Register(options: { user_name: $username, user_password: $password }) {
     error {
       field
       message

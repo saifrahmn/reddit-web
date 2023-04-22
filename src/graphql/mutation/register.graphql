@@ -1,18 +1,12 @@
-mutation Register($options: UserID!) {
-
-  Register(options: {user_name: $username, user_password: $userpassword}) {
-    error{
+mutation Mutation($username: String!, $password: String!) {
+  Register(options: { user_name: $username, user_password: $password }) {
+    error {
       field
       message
     }
     user {
-      createdAt
       id
-      updatedAt
       username
     }
   }
-}
-export function useRegisterMutation(){
-  return Urql.useMutation<RegisterMutation, RegisterMutationVariables>{RegisterDocument}
 }
