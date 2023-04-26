@@ -14,10 +14,10 @@ import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
-import { NavBar } from '../components/navbar'
+import { NavBar } from '../components/NavBar'
 
 const Index = () => (
   <NavBar />
 )
 
-export default Index
+export default Index;
